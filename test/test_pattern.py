@@ -26,6 +26,11 @@ class GameTest(TestCase):
         r_a,a = g.decorator_p()
         self.assertEqual(r_a,"decorator")
 
+    def test_adapter(self):
+        g = Game_pattern()
+        r_a,a = g.adapter_p()
+        self.assertEqual(r_a,"adapter")
+
     def test_right_answer_true(self):
         g = Game_pattern()
         res = g.check_answer("singleton","singleton")
