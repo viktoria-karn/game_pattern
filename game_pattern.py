@@ -40,3 +40,11 @@ class Game_pattern:
         right_answer = "decorator"
         answer = input()
         return right_answer, answer
+
+    def adapter_p(self):
+        print("Данный паттерн необходим для организации применения функций объекта, который нельзя модифицировать,"
+              "посредством специального интерфейса.")
+        print("Введите правильный ответ")
+        right_answer = "adapter"
+        answer = input()
+        return right_answer, answer
