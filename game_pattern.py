@@ -22,3 +22,12 @@ class Game_pattern:
         right_answer = "builder"
         answer = input()
         return right_answer, answer
+
+    def bridge_p(self):
+        print("Разделяет абстракцию и реализацию таким образом, чтобы они могли меняться независимо."
+              "Данный паттерн работает с помощью инкапсуляции, агрегирования и может применять наследование "
+              "в целях распределения межклассовой ответственности.")
+        print("Введите правильный ответ")
+        right_answer = "bridge"
+        answer = input()
+        return right_answer, answer
