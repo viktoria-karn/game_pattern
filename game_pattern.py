@@ -13,3 +13,12 @@ class Game_pattern:
         right_answer = "singleton"
         answer = input()
         return right_answer, answer
+    def builder_p(self):
+        print("Полезный порождающий паттерн, который, по сути, является методом создания составного объекта."
+              "Он дифференцирует сложный объект на конструирование и представление."
+              "Благодаря этому при выполнении одной и той же операции конструирования вы можете "
+              "получить разные представления.")
+        print("Введите правильный ответ")
+        right_answer = "builder"
+        answer = input()
+        return right_answer, answer
