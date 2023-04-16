@@ -16,3 +16,8 @@ class GameTest(TestCase):
         res = g.check_answer("singleton","singleton")
         self.assertEqual(res, 0)
 
+    def test_right_answer_false(self):
+        g = Game_pattern()
+        res = g.check_answer("singleton","fabrica")
+        self.assertEqual(res, 1)
+
