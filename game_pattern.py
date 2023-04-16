@@ -31,3 +31,12 @@ class Game_pattern:
         right_answer = "bridge"
         answer = input()
         return right_answer, answer
+
+    def decorator_p(self):
+        print("Данный шаблон был сформирован для динамического подключения дополнительного поведения к объекту."
+              "С его помощью практика создания подклассов получает гибкую альтернативу."
+              "Это позволяет сделать функционал более широким.")
+        print("Введите правильный ответ")
+        right_answer = "decorator"
+        answer = input()
+        return right_answer, answer
