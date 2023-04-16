@@ -11,6 +11,11 @@ class GameTest(TestCase):
         r_a,a = g.singleton_p()
         self.assertEqual(r_a,"singleton")
 
+    def test_builder(self):
+        g = Game_pattern()
+        r_a,a = g.builder_p()
+        self.assertEqual(r_a,"builder")
+
     def test_right_answer_true(self):
         g = Game_pattern()
         res = g.check_answer("singleton","singleton")
